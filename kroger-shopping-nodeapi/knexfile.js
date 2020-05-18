@@ -1,7 +1,7 @@
 // Update with your config settings.
 
 module.exports = {
-
+// Development Environment SQL
   development: {
     client: 'sqlite3',
     connection: {
@@ -20,7 +20,7 @@ module.exports = {
       }
     }
   },
-
+// Testing Environment SQL
   testing: {
     client: 'sqlite3',
     connection: {
@@ -39,7 +39,7 @@ module.exports = {
       }
     }
   },
-
+// Staging Environment PG
   staging: {
     client: 'postgresql',
     connection: {
@@ -55,7 +55,7 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   },
-
+// Production Environment PG
   production: {
     client: 'postgresql',
     connection: {
